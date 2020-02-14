@@ -54,6 +54,7 @@ group :test do
   gem 'webdrivers'
 
   gem 'webmock'
+  gem 'mocha'
   gem 'vcr'
 end
 
