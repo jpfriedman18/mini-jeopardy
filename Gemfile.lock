@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/djds23/jApi.git
+  revision: f3905ee2392b2a5c2db7469130782f39f129e691
+  specs:
+    japi (1.1.2)
+      configurations (~> 2.2.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -73,6 +80,7 @@ GEM
       xpath (~> 3.2)
     childprocess (3.0.0)
     concurrent-ruby (1.1.6)
+    configurations (2.2.2)
     crass (1.0.6)
     erubi (1.9.0)
     ffi (1.12.2)
@@ -203,6 +211,7 @@ DEPENDENCIES
   bootsnap (>= 1.4.2)
   byebug
   capybara (>= 2.15)
+  japi!
   jbuilder (~> 2.7)
   listen (>= 3.0.5, < 3.2)
   puma (~> 4.1)
