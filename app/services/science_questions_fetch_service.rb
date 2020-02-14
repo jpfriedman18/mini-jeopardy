@@ -16,7 +16,7 @@ class ScienceQuestionsFetchService
   def random_questions_list
     result = []
     available_point_values.each do |point_value|
-      questions = @available_questions.select{|q| q.value == point_value}
+      questions = @available_questions.select{ |q| q.value == point_value }
       result << questions.sample
     end
     result
