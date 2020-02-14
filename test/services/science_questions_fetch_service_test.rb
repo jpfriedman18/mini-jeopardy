@@ -16,10 +16,11 @@ class ScienceQuestionsFetchServiceTest < Minitest::Test
     assert service.random_questions_list.none?{ |q| q.value.nil? }
   end
 
-  def test_questions_correctly_ordered
+  def test_questions_correctly_ordered_and_unique
     questions = service.random_questions_list
     values = questions.map(&:value)
     assert values == values.sort
+    assert values == values.uniq
   end
 
 end
