@@ -12,7 +12,11 @@ class ScienceQuestionsFetchService
   end
 
   # Returns an ordered array withone JAPI::Clue object for each unique point value
-  # present in all the clues in @available_questions
+  # present in all the clues in @available_questions.
+  # NOTE: presently, the elements in the result array are only used for displaying
+  # the question text and its associated point value, however each of the objects
+  # also has an #answer method. In future iterations, the answers can be used in the view
+  # to allow users to play
   def random_questions_list
     result = []
     available_point_values.each do |point_value|
