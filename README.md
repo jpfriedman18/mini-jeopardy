@@ -20,5 +20,10 @@ To start the app locally, simply run
 rails s
 ```
 and you will then be able to visit `http://localhost:3000/science_questions/` in your browser.
+
+To run the test suite, run
+```
+rake test
+```
 ### Notes
 This repo is for evaulation purposes for a specific job application.
